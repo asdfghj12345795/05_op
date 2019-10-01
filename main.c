@@ -12,10 +12,10 @@ int main(int argc, char *argv[])
 	scanf("%d", &input);
 	
 	if (input>0)
-	  printf("It's a positive number.\n");
+	  printf("The absolute value is %d", input);
 	
 	else
-	printf("It's not a positive number.\n");	
+	printf("The absolute value is %d", -input);	
 	
 	return 0;
 }
