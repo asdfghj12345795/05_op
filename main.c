@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 }
 		printf("The number of digits is %d.\n", num);
 		
-	
+return 0;	
 }
