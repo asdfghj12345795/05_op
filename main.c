@@ -6,20 +6,28 @@
 int main(int argc, char *argv[]) 
 
 {
-	char c;
-	int num=0;
+	int cnt=0, input;
+	int answer =70 ;
 	
-	printf("input a string : ");
 	
-	while((c=getchar())!= '\n')
-{
-			
-		if(c<='9' &&c>='0')
+	
+	do
 	{
-		 num++;
-	}
-}
-		printf("The number of digits is %d.\n", num);
+		printf (" Guess a number : ");
+		scanf("%d", &input);
 		
-return 0;	
+		if(input<answer)
+		{
+			printf("low!\n");
+		}
+		
+		else if(input>answer)
+		printf("high!\n");
+		
+	cnt++;
+		
+	}while(input !=answer);
+
+	printf("Congratulation. trial : %d\n.", cnt);
+	return 0;
 }
